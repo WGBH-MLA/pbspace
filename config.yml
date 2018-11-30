@@ -1,0 +1,4 @@
+parents:
+  digital_object:
+    name: instantiations
+    cardinality: zero_to_one

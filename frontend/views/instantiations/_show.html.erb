@@ -1,0 +1,23 @@
+<%
+  section_id = "instantiations" if section_id.blank?
+
+  types = ["identifier", "date", "digital", "standard", "generations", "colors"]
+%>
+
+<section id="<%= section_id %>" class="subrecord-form-dummy">
+  <h3><%= I18n.t("plugins.instantiation._singular") %></h3>
+  <div class="subrecord-form-container">
+    <div class="subrecord-form-fields">
+      <%=
+        out = ""
+        types.each do |field|
+          if instantiations[field]
+            out += I18n.t("plugins.instantiation.#{field}") + ": " + instantiations[field]
+            out += "</br>"
+          end
+        end
+        out.html_safe
+      %>
+    </div>
+  </div>
+</section>

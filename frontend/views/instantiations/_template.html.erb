@@ -1,0 +1,22 @@
+<% define_template("instantiation", jsonmodel_definition(:instantiations)) do |form| %>
+
+  <% instantiation_form_field = lambda do |name, value| %>
+    <div class="form-group">
+      <div class="col-md-12">
+        <div class="col-md-2">
+          <%= form.label name, {:plugin => true} %>
+        </div>
+        <div class="col-md-10">
+          <%= form.textfield name, value  %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+  <% instantiation_form_field.call("identifier", user_prefs["instantiation_identifier"]) %>
+  <% instantiation_form_field.call("date", user_prefs["instantiation_date"]) %>
+  <% instantiation_form_field.call("digital", user_prefs["instantiation_digital"]) %>
+  <% instantiation_form_field.call("standard", user_prefs["instantiation_standard"]) %>
+  <% instantiation_form_field.call("generations", user_prefs["instantiation_generations"]) %>
+  <% instantiation_form_field.call("colors", user_prefs["instantiation_colors"]) %>
+<% end %>

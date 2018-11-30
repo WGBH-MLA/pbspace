@@ -1,0 +1,26 @@
+en:
+  plugins:
+    instantiation: &instantiation_attributes
+      identifier: Identifier
+      date: Date
+      digital: Digital
+      standard: Standard
+      generations: Generations
+      colors: Colors
+      preference_section: Instantiations
+
+      _singular: Instantiations
+      _plural: Instantiations
+      _frontend:
+        action:
+          add: Add Instantiation
+    pbspace:
+      <<: *instantiation_attributes
+    defaults:
+      instantiation_identifier: Identifier
+      instantiation_date: Date
+      instantiation_digital: Digital
+      instantiation_standard: Standard
+      instantiation_generations: Generations
+      instantiation_colors: Colors
+      instantiation_preference_section: Instantiations
