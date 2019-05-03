@@ -1,8 +1,7 @@
 Sequel.migration do
 
   up do
-
-    create_table(:instantiations) do
+    create_table(:instantiation) do
       primary_key :id
       Integer :digital_object_id, :null => true
 
@@ -16,14 +15,14 @@ Sequel.migration do
       apply_mtime_columns
     end
 
-   alter_table(:instantiations) do
+    alter_table(:instantiation) do
       add_foreign_key([:digital_object_id], :digital_object, :key => :id)
     end
   end
 
 
   down do
-    drop_table(:instantiations)
+    drop_table(:instantiation)
   end
 
 end

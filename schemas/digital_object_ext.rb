@@ -1,1 +1,6 @@
-{ "instantiations" => {"type" => "JSONModel(:instantiations) object"} }
+{
+      "instantiations" => {
+        "type" => "array",
+        "items" => {"type" => "JSONModel(:instantiation) object"}
+      },
+}

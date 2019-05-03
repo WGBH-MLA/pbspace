@@ -1,23 +1,38 @@
 <%
-  section_id = "instantiations" if section_id.blank?
-
-  types = ["identifier", "date", "digital", "standard", "generations", "colors"]
+   section_id = "instantiations" if section_id.blank?
 %>
 
-<section id="<%= section_id %>" class="subrecord-form-dummy">
-  <h3><%= I18n.t("plugins.instantiation._singular") %></h3>
-  <div class="subrecord-form-container">
-    <div class="subrecord-form-fields">
-      <%=
-        out = ""
-        types.each do |field|
-          if instantiations[field]
-            out += I18n.t("plugins.instantiation.#{field}") + ": " + instantiations[field]
-            out += "</br>"
-          end
-        end
-        out.html_safe
-      %>
-    </div>
+<%= render_aspace_partial :partial => "instantiations/template" %>
+
+<section id="<%= section_id %>">
+  <h3><%= I18n.t("instantiations._plural") %></h3>
+  <div class="accordion details" id="instantiations_accordion">
+    <%= context.list_for(context["instantiations"], "instantiations[]") do |instantiation, index| %>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="row collapsed accordion-toggle" data-toggle="collapse" data-parent="#instantiations_accordion" href="#instantiation_<%= index %>">
+            <div class="col-md-1">
+              <span class="glyphicon"></span>
+            </div>
+            <div class="col-md-1">
+              <%= instantiation["identifier"]) %>
+            </div>
+            <div class="col-md-3">
+              <%= instantiation["date"] %>
+            </div>
+            <div class="col-md-7">
+              <%= instantiation["digital"] %>
+            </div>
+          </div>
+        </div>
+        <div id="instantiation_<%= index %>" class="accordion-body collapse">
+          <div class="accordion-inner">
+            <div class="subrecord-form-container">
+              <%= read_only_view(instantiation) %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
   </div>
 </section>

@@ -1,7 +1,6 @@
-class Instantiation < Sequel::Model(:instantiations)
+class Instantiation < Sequel::Model(:instantiation)
   include ASModel
-  corresponds_to JSONModel(:instantiations)
+  corresponds_to JSONModel(:instantiation)
 
   set_model_scope :global
-
 end
