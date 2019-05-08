@@ -10,6 +10,11 @@
       "standard" => {"type" => "string"},
       "generations" => {"type" => "string"},
       "colors" => {"type" => "string"},
+      "duration" => {"type" => "string"},
+      "data_rate" => {"type" => "string"},
+      "tracks" => {"type" => "string"},
+      "channel_configuration" => {"type" => "string"},
+      "alternative_modes" => {"type" => "string"},
     },
   },
 }
