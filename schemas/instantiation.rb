@@ -15,6 +15,10 @@
       "tracks" => {"type" => "string"},
       "channel_configuration" => {"type" => "string"},
       "alternative_modes" => {"type" => "string"},
+      "essence_tracks" => {
+        "type" => "array",
+        "items" => {"type" => "JSONModel(:essence_track) object"}
+      },
     },
   },
 }

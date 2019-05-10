@@ -20,5 +20,15 @@ FactoryBot.define do
     standard { generate(:alphanumstr) }
     generations { generate(:alphanumstr) }
     colors { generate(:alphanumstr) }
+    essence_tracks { [ build(:json_essence_track), build(:json_essence_track) ] }
+  end
+
+  factory :json_essence_track, class: JSONModel(:essence_track) do
+    identifier { generate(:alphanumstr) }
+    type { generate(:alphanumstr) }
+    standard { generate(:alphanumstr) }
+    encoding { generate(:alphanumstr) }
+    duration { generate(:alphanumstr) }
+    annotation { generate(:alphanumstr) }
   end
 end

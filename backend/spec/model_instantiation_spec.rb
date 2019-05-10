@@ -15,4 +15,9 @@ describe 'Instantiations' do
       expect(instantiation[key]).to_not eq(nil)
     end
   end
+
+  it "Can have EssenceTracks associated" do
+    instantiation = digital_object.instantiation.sample
+    expect(instantiation.essence_track.length).to eq(2)
+  end
 end
