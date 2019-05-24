@@ -12,3 +12,5 @@ en:
     _frontend:
       action:
         add: Add Instantiations
+  digital_object:
+    genre: Genre
