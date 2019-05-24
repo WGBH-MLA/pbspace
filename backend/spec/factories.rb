@@ -20,5 +20,27 @@ FactoryBot.define do
     standard { generate(:alphanumstr) }
     generations { generate(:alphanumstr) }
     colors { generate(:alphanumstr) }
+    duration { generate(:alphanumstr) }
+    data_rate { generate(:alphanumstr) }
+    tracks { generate(:alphanumstr) }
+    channel_configuration { generate(:alphanumstr) }
+    alternative_modes { generate(:alphanumstr) }
+    video_track_standard { generate(:alphanumstr) }
+    audio_track_standard { generate(:alphanumstr) }
+    video_track_encoding { generate(:alphanumstr) }
+    audio_track_encoding { generate(:alphanumstr) }
+    video_track_data_rate { generate(:alphanumstr) }
+    audio_track_data_rate { generate(:alphanumstr) }
+    frame_rate { generate(:alphanumstr) }
+    playback_speed { generate(:alphanumstr) }
+    sampling_rate { generate(:alphanumstr) }
+    video_bit_depth { generate(:alphanumstr) }
+    audio_bit_depth { generate(:alphanumstr) }
+    frame_size { generate(:alphanumstr) }
+    aspect_ratio { generate(:alphanumstr) }
+    video_track_time_start { generate(:alphanumstr) }
+    audio_track_time_start { generate(:alphanumstr) }
+    video_track_duration { generate(:alphanumstr) }
+    audio_track_duration { generate(:alphanumstr) }
   end
 end

@@ -4,7 +4,7 @@ Sequel.migration do
 
   up do
     obj = self[:enumeration].where(name: "linked_agent_role").first
-    add_editable_enum_values(obj, [ "Contributor" ])
+    add_editable_enum_values(obj, [ "Contributor", "Publisher" ])
   end
 
 end
