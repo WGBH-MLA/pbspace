@@ -6,6 +6,26 @@ en:
     standard: Standard
     generations: Generations
     colors: Colors
+    tracks: Tracks
+    channel_configuration: Channel Configuration
+    alternative_modes: Alternative Modes
+    video_track_standard: Video Track Standard
+    audio_track_standard: Audio Track Standard
+    video_track_encoding: Video Track Encoding
+    audio_track_encoding: Audio Track Encoding
+    video_track_data_rate: Video Track Data Rate
+    audio_track_data_rate: Audio Track Data Rate
+    frame_rate: Frame Rate
+    playback_speed: Playback Speed
+    sampling_rate: Sampling Rate
+    video_bit_depth: Video Bit Depth
+    audio_bit_depth: Audio Bit Depth
+    frame_size: Frame Size
+    aspect_ratio: Aspect Ratio
+    video_track_time_start: Video Track Time Start
+    audio_track_time_start: Audio Track Time Start
+    video_track_duration: Video Track Duration
+    audio_track_duration: Audio Track Duration
     preference_section: Instantiations
     _singular: Instantiation
     _plural: Instantiations
@@ -14,3 +34,46 @@ en:
         add: Add Instantiations
   digital_object:
     genre: Genre
+  enumerations:
+    linked_agent_archival_record_relators:
+      anc: Anchor
+      asp: Artistic Supervisor
+      asd: Assistant Director
+      asp: Assistant Producer
+      asd: Associate Director
+      apr: Associate Producer
+      bce: Broadcast Engineer
+      cmo: Camera Operator
+      cap: Caption Writer
+      csd: Casting Director
+      cop: Co-Producer
+      cpt: Concept
+      cpa: Concept Artist
+      cnt: Content Supervision
+      cod: Coordinating Director
+      cdp: Coordinating Producer
+      dsc: Describer
+      dop: Director of Photography
+      exd: Executive Director
+      exp: Executive Producer
+      flm: Filmmaker
+      fla: Foley Artist
+      gpd: Graphic Designer
+      gpe: Graphic Editor
+      gus: Guest
+      lgt: Lighting Technician
+      mua: Make-Up Artist
+      msp: Music Supervisor
+      pmg: Performing Group
+      pru: Production Unit
+      pas: Program Associate
+      pjc: Project Coordinator
+      pjs: Project Supervisor
+      rec: Recoding Engineer
+      scw: Screenwriter
+      sne: Sound Editor
+      sts: Story Supervisor
+      sup: Supervisory Producer
+      vde: Video Engineer
+      voa: Voiceover Artist
+      wrt: Writer
