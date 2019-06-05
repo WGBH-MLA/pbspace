@@ -1,0 +1,3 @@
+table td[class*="col-"].instantiation-show-col {
+  float: left;
+}
