@@ -27,6 +27,14 @@
           <%= display_audit_info(digital_object) %>
         </section>
 
+        <% if digital_object.additional_identifiers.length > 0 %>
+          <%= render_aspace_partial :partial => "additional_identifiers/show", :locals => { :additional_identifiers => digital_object.additional_identifiers, :section_id => "digital_object_linked_additional_identifiers_" } %>
+        <% end %>
+
+        <% if digital_object.additional_titles.length > 0 %>
+          <%= render_aspace_partial :partial => "additional_titles/show", :locals => { :additional_titles => digital_object.additional_titles, :section_id => "digital_object_linked_additional_titles_" } %>
+        <% end %>
+
         <% if digital_object.file_versions.length > 0 %>
           <%= render_aspace_partial :partial => "file_versions/show", :locals => { :file_versions => digital_object.file_versions, :section_id => "digital_object_file_versions_" } %>
         <% end %>

@@ -1,1 +1,3 @@
 DigitalObject.include(Instantiations)
+DigitalObject.include(AdditionalIdentifiers)
+DigitalObject.include(AdditionalTitles)

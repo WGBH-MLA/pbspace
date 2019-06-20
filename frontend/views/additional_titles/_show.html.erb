@@ -1,0 +1,34 @@
+<%
+   section_id = "digital_object_linked_additional_titles_" if section_id.blank?
+%>
+
+<section id="<%= section_id %>" class="subrecord-form-dummy">
+  <h3><%= I18n.t("additional_title._plural") %></h3>
+  <div class="subrecord-form-container">
+    <div class="subrecord-form-fields">
+      <% additional_titles.each_with_index do | title, index | %>
+        <table class="table table-striped table-bordered table-condensed table-hover token-list">
+          <tbody>
+            <tr>
+              <td class="col-md-12">
+                <h4><%= I18n.t("additional_title._singular") %></h4>
+              </td>
+            </tr>
+            <% title.keys.each do |key| %>
+              <% if title["#{key}"].present? %>
+                <tr>
+                  <td class="col-md-4 additional_title-show-col">
+                    <%= I18n.t("additional_title.#{key}") %>
+                  </td>
+                  <td class="col-md-8 additional_title-show-col">
+                    <%= title[key] %>
+                  </td>
+                </tr>
+              <% end %>
+            <% end %>
+          </tbody>
+        </table>
+      <% end %>
+    </div>
+  </div>
+</section>

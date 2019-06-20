@@ -38,6 +38,34 @@ en:
     _frontend:
       action:
         add: Add Instantiations
+  additional_identifier:
+    identifier: Identifier
+    type: Type
+    created_by: Created By
+    last_modified_by: Last Modified By
+    create_time: Created
+    system_mtime: System MAC Time
+    user_mtime: User MAC Time
+    jsonmodel_type: JSON Model
+    _singular: Additional Identifier
+    _plural: Additional Identifiers
+    _frontend:
+      action:
+        add: Add Identifier
+  additional_title:
+    title: Title
+    type: Type
+    created_by: Created By
+    last_modified_by: Last Modified By
+    create_time: Created
+    system_mtime: System MAC Time
+    user_mtime: User MAC Time
+    jsonmodel_type: JSON Model
+    _singular: Additional Title
+    _plural: Additional Titles
+    _frontend:
+      action:
+        add: Add Title
   digital_object:
     genre: Genre
   enumerations:
