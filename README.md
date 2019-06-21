@@ -6,6 +6,10 @@ This plugin adds additional properties and object relationships for DigitalObjec
 
 One additional property has been added to the ArchivesSpace DigitalObject. The `genre` property is intended to correspond to the pbcoreGenre element in PBCore.
 
+# AdditionalIdentifier & AdditionalTitle
+
+AdditionalIdentifier and AdditionalTitle are new objects added to ArchivesSpace for associating additional IDs and titles with DigitalObjects in the application. There is a one-to-many relationship between a DigitalObject and AdditionalIdentifiers and AdditionalTitles.
+
 # Instantiations
 
 Instantiations are a new object added to ArchivesSpace for tracking PBCore Instantiations. There is a one-to-many relationship between a DigitalObject and Instantiations.
