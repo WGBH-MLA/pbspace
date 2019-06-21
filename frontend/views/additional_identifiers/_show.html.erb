@@ -14,18 +14,22 @@
                 <h4><%= I18n.t("additional_identifier._singular") %></h4>
               </td>
             </tr>
-            <% ident.keys.each do |key| %>
-              <% if ident["#{key}"].present? %>
-                <tr>
-                  <td class="col-md-4 additional_identifier-show-col">
-                    <%= I18n.t("additional_identifier.#{key}") %>
-                  </td>
-                  <td class="col-md-8 additional_identifier-show-col">
-                    <%= ident[key] %>
-                  </td>
-                </tr>
-              <% end %>
-            <% end %>
+            <tr>
+              <td class="col-md-4 additional_identifier-show-col">
+                <%= I18n.t("additional_identifier.identifier") %>
+              </td>
+              <td class="col-md-8 additional_identifier-show-col">
+                <%= ident['identifier'] %>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-md-4 additional_identifier-show-col">
+                <%= I18n.t("additional_identifier.type") %>
+              </td>
+              <td class="col-md-8 additional_identifier-show-col">
+                <%= ident['type'] %>
+              </td>
+            </tr>
           </tbody>
         </table>
       <% end %>

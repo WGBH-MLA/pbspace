@@ -14,18 +14,22 @@
                 <h4><%= I18n.t("additional_title._singular") %></h4>
               </td>
             </tr>
-            <% title.keys.each do |key| %>
-              <% if title["#{key}"].present? %>
-                <tr>
-                  <td class="col-md-4 additional_title-show-col">
-                    <%= I18n.t("additional_title.#{key}") %>
-                  </td>
-                  <td class="col-md-8 additional_title-show-col">
-                    <%= title[key] %>
-                  </td>
-                </tr>
-              <% end %>
-            <% end %>
+            <tr>
+              <td class="col-md-4 additional_title-show-col">
+                <%= I18n.t("additional_title.title") %>
+              </td>
+              <td class="col-md-8 additional_title-show-col">
+                <%= title['title'] %>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-md-4 additional_title-show-col">
+                <%= I18n.t("additional_title.type") %>
+              </td>
+              <td class="col-md-8 additional_title-show-col">
+                <%= title['type'] %>
+              </td>
+            </tr>
           </tbody>
         </table>
       <% end %>
