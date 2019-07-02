@@ -1,3 +1,11 @@
 table td[class*="col-"].instantiation-show-col {
   float: left;
 }
+
+table td[class*="col-"].additional_identifier-show-col {
+  float: left;
+}
+
+table td[class*="col-"].additional_title-show-col {
+  float: left;
+}

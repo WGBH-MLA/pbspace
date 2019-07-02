@@ -26,6 +26,14 @@
 
   <% form.emit_template("digital_object") %>
 
+  <div class="subrecord-form-container">
+    <%= render_aspace_partial :partial => "shared/subrecord_form", :locals => {:form => form, :name => "additional_identifiers", :heading_size => "h3"} %>
+  </div>
+
+  <div class="subrecord-form-container">
+    <%= render_aspace_partial :partial => "shared/subrecord_form", :locals => {:form => form, :name => "additional_titles", :heading_size => "h3"} %>
+  </div>
+
   <%= render_aspace_partial :partial => "shared/subrecord_form", :locals => {:form => form, :name => "file_versions"} %>
 
   <%= render_aspace_partial :partial => "shared/subrecord_form", :locals => {:form => form, :name => "dates", :template => "archival_record_date"} %>

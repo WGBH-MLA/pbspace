@@ -1,0 +1,38 @@
+<%
+   section_id = "digital_object_linked_additional_identifiers_" if section_id.blank?
+%>
+
+<section id="<%= section_id %>" class="subrecord-form-dummy">
+  <h3><%= I18n.t("additional_identifier._plural") %></h3>
+  <div class="subrecord-form-container">
+    <div class="subrecord-form-fields">
+      <% additional_identifiers.each_with_index do | ident, index | %>
+        <table class="table table-striped table-bordered table-condensed table-hover token-list">
+          <tbody>
+            <tr>
+              <td class="col-md-12">
+                <h4><%= I18n.t("additional_identifier._singular") %></h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-md-4 additional_identifier-show-col">
+                <%= I18n.t("additional_identifier.identifier") %>
+              </td>
+              <td class="col-md-8 additional_identifier-show-col">
+                <%= ident['identifier'] %>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-md-4 additional_identifier-show-col">
+                <%= I18n.t("additional_identifier.type") %>
+              </td>
+              <td class="col-md-8 additional_identifier-show-col">
+                <%= ident['type'] %>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      <% end %>
+    </div>
+  </div>
+</section>
